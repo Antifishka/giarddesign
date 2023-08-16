@@ -8,8 +8,8 @@
     <title>GiardDesign</title>
   </head>
   <body>
-    <header class=" container py-[24px] mx-auto px-4 xl:px-[89px]">
-      <div class="flex">
+    <header class="bg-white">
+      <div class="flex container mx-auto py-[24px] px-[16px] xl:px-[89px]">
         <a href="./index.html">
           <img src="./images/header/giarddesign.png" alt="logo" width="114">
         </a>
@@ -18,27 +18,33 @@
           <nav>
             <ul class="flex gap-12">
               <li>
-                <a href="" class="text-sm text-primary hover:text-accent">Oferta</a>
+                <a href="" class="text-sm text-primary nav-animation">
+                  Oferta
+                </a>
               </li>
 
               <li>
-                <a href="" class="text-sm text-primary hover:text-accent">O firmie</a>
+                <a href="" class="text-sm text-primary nav-animation">
+                  O firmie
+                </a>
               </li>
 
               <li>
-                <a href="" class="text-sm text-primary hover:text-accent">Realizacje</a>
+                <a href="" class="text-sm text-primary nav-animation">
+                  Realizacje
+                </a>
               </li>
 
               <li>
-                <a href="" class="text-sm text-primary hover:text-accent">Kontakt</a>
+                <a href="" class="text-sm text-primary nav-animation">
+                  Kontakt
+                </a>
               </li>
             </ul>
           </nav>
 
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M10 2.25C5.71979 2.25 2.25 5.71979 2.25 10C2.25 14.2802 5.71979 17.75 10 17.75C11.87 17.75 13.5853 17.0877 14.9242 15.9848L20.4697 21.5303L20.5538 21.6029C20.8474 21.8208 21.2641 21.7966 21.5303 21.5303C21.8232 21.2374 21.8232 20.7626 21.5303 20.4697L15.9848 14.9242C17.0877 13.5853 17.75 11.87 17.75 10C17.75 5.71979 14.2802 2.25 10 2.25ZM10 3.75C13.4518 3.75 16.25 6.54822 16.25 10C16.25 13.4518 13.4518 16.25 10 16.25C6.54822 16.25 3.75 13.4518 3.75 10C3.75 6.54822 6.54822 3.75 10 3.75Z"
-              fill="#111111" />
+          <svg class="fill-primary hover:fill-accent transition" width="24" height="24">
+            <use href="./images/sprite.svg#icon-search"></use>
           </svg>
         </div>
       </div>
@@ -47,31 +53,85 @@
     <main>
       <!-- Hero -->
       <section class="h-[737px] flex justify-center">
-        <div class="basis-1/2 py-[144.5] container bg-background flex justify-start items-center">
-          <div class="w-[599px]">
-            <h1 class="font-title text-6xl font-medium mb-[44px]">Nowoczesna aranżacja 
+        <div class="basis-1/2 bg-background pt-[144.5px] flex justify-end">
+          <div class="w-[631px] pr-[64px]">
+            <h1 class="font-title text-6xl font-medium leading-tight mb-[44px]">Nowoczesna aranżacja 
               <br> Twojego ogrodu
             </h1>
-            <p class="mb-[72px]">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usługz
+            <p class="w-[470px] mb-[72px]">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usługz
               indywidualnym podejściem do każdego projektu.</p>
             <div class="flex gap-9">
-              <button class="h-[50px] bg-accent rounded-full px-[24px] pt-[12px] pb-[14px] text-secondary">
+              <button class="h-[50px] bg-accent rounded-full px-[24px] pt-[12px] pb-[14px] text-secondary
+                hover:opacity-75 transition">
                 Skontaktuj się z nami
               </button>
-              <button class="h-[50px] border border-accent rounded-full px-[22px] pt-[12px] pb-[14px] text-accent">
+              <button class="h-[50px] border border-accent rounded-full px-[22px] pt-[12px] pb-[14px] text-accent
+                flex items-center gap-2 hover:bg-accent hover:text-secondary transition">
                 Zobacz nasze realizacje
+                <svg class="fill-accent hover:fill-secondary transition" width="16" height="16">
+                  <use href="./images/sprite.svg#icon-ar-button"></use>
+                </svg>
               </button>
             </div>
           </div>
         </div>
 
-        <div class="basis-1/2 bg-[url('/images/hero/bg-hero.jpeg')] bg-bottom bg-cover bg-no-repeat">
+        <div class="basis-1/2 bg-[url('/images/hero/bg-hero.jpeg')] bg-bottom bg-cover bg-no-repeat
+          flex justify-end items-end">
+          <button class="w-[96px] h-[96px] pl-[32px] bg-secondary hover:opacity-75 transition-opacity">
+            <svg class="first-line:fill-black hover:opacity-75 transition-opacity" width="48" height="48">
+              <use href="./images/sprite.svg#icon-ar-left-hero"></use>
+            </svg>
+          </button>
+          <button class="w-[96px] h-[96px] pr-[32px] bg-secondary hover:opacity-75 transition-opacity">
+            <svg class="ml-auto fill-black hover:opacity-75 transition-opacity" width="48" height="48">
+              <use href="./images/sprite.svg#icon-ar-right-hero"></use>
+            </svg>
+          </button>
         </div>
       </section>
 
       <!-- Offer -->
-      <section class="pt-[120px]">
-        <h2>Działamy kompleksowo</h2>
+      <section class="container mx-auto py-[24px] px-[16px] xl:px-[89px] pt-[120px]">
+        <div class="w-[709px] ml-[111px] mb-[96px]">
+          <p class="mb-[16px] text-xs leading-normal tracking-[-0.12px] text-accent">Oferta</p>
+          <h2 class="mb-[32px] font-title text-5xl font-medium leading-tight tracking-[-1.44px]">Działamy 
+            <span class="italic">kompleksowo</span>
+          </h2>
+          <p>Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz
+            rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i
+            wieloletnim doświadczeniem.
+          </p>
+        </div>
+
+        <ul class="flex gap-16">
+          <li class="py=[48px] px-[40px]">
+            <svg>
+              <use></use>
+            </svg>
+            <h3>Projekty</h3>
+            <p>Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
+            <a href="">Dowiedz się więcej</a>
+          </li>
+
+          <li class="py=[48px] px-[40px]">
+            <svg>
+              <use></use>
+            </svg>
+            <h3>Wizualizacje</h3>
+            <p>Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
+            <a href="">Dowiedz się więcej</a>
+          </li>
+
+          <li class="py=[48px] px-[40px]">
+            <svg>
+              <use></use>
+            </svg>
+            <h3>Realizacje</h3>
+            <p>Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
+            <a href="">Zobacz nasze realizacje</a>
+          </li>
+        </ul>
       </section>
     </main>
 

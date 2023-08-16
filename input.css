@@ -6,5 +6,16 @@
     html {
         font-family: Inter, system-ui, sans-serif;
         font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: -0.16px;
+
+        background-color: #F5F0EC;
+    }
+}
+
+@layer components {
+    .nav-animation {
+        @apply hover:text-accent focus:text-accent hover:underline focus:underline focus:outline-none underline-offset-2 decoration-2 decoration-accent transition-all;
     }
 }
