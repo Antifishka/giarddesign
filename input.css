@@ -4,6 +4,7 @@
 
 @layer base {
     html {
+        scroll-behavior: smooth;
         font-family: Inter, system-ui, sans-serif;
         font-size: 16px;
         font-weight: 400;
@@ -32,6 +33,10 @@
     }
 
     .offer__btn{
-        @apply flex items-center gap-2.5 py-[4px] px-[6px] text-accent border-b border-accent hover:border hover:rounded-full focus:border focus:rounded-full focus:outline-none transition-all;
+        @apply flex items-center gap-2.5 max-w-max py-[4px] px-[6px] text-accent border-b border-accent hover:border hover:rounded-full focus:border focus:rounded-full focus:outline-none transition-all;
+    }
+
+    .footer__link{
+        @apply text-sm tracking-[-0.14px] text-secondary;
     }
 }

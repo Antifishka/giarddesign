@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="bg-white">
-      <div class="flex container mx-auto py-[24px] px-[16px] xl:px-[89px]">
+      <div class="container mx-auto py-[24px] px-[16px] xl:px-[89px] flex">
         <a href="./index.html">
           <img src="./images/header/giarddesign.png" alt="logo" width="114">
         </a>
@@ -58,20 +58,25 @@
             <h1 class="font-title text-6xl font-medium leading-tight mb-[44px]">Nowoczesna aranżacja 
               <br> Twojego ogrodu
             </h1>
+
             <p class="w-[470px] mb-[72px]">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usługz
               indywidualnym podejściem do każdego projektu.</p>
+              
             <div class="flex gap-9">
-              <button class="h-[50px] bg-accent rounded-full px-[24px] pt-[12px] pb-[14px] text-secondary
-                hover:opacity-75 transition">
+              <a href="#contacts"
+                class="h-[50px] bg-accent rounded-full px-[24px] pt-[12px] pb-[14px] text-secondary
+                  hover:opacity-75 transition">
                 Skontaktuj się z nami
-              </button>
-              <button class="h-[50px] border border-accent rounded-full px-[22px] pt-[12px] pb-[14px] text-accent
-                flex items-center gap-2 hover:bg-accent hover:text-secondary transition">
+              </a>
+
+              <a href="#projects"
+                class="h-[50px] border border-accent rounded-full px-[22px] pt-[12px] pb-[14px] text-accent
+                  flex items-center gap-2 hover:bg-accent hover:text-secondary transition">
                 Zobacz nasze realizacje
                 <svg class="fill-accent hover:fill-secondary transition" width="16" height="16">
                   <use href="./images/sprite.svg#icon-ar-button"></use>
                 </svg>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -114,12 +119,12 @@
               loading="lazy"/>
             <h3 class="mb-[12px] font-title text-[28px] font-medium leading-8 tracking-[-1.4px]">Projekty</h3>
             <p class="mb-[63px] text-[14px] tracking-[-0.14px]">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
-            <button class="offer__btn">
+            <a href="#projects" class="offer__btn">
               Dowiedz się więcej
               <svg class="fill-accent" width="16" height="16">
                 <use href="./images/sprite.svg#icon-ar-right-button"></use>
               </svg>
-            </button>
+            </a>
           </li>
 
           <li class="offer__item">
@@ -131,12 +136,12 @@
               loading="lazy" />
             <h3 class="mb-[12px] font-title text-[28px] font-medium leading-8 tracking-[-1.4px]">Wizualizacje</h3>
             <p class="mb-[63px] text-[14px] tracking-[-0.14px]">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
-            <button class="offer__btn">
+            <a href="#projects" class="offer__btn">
               Dowiedz się więcej
               <svg class="fill-accent" width="16" height="16">
                 <use href="./images/sprite.svg#icon-ar-right-button"></use>
               </svg>
-            </button>
+            </a>
           </li>
 
           <li class="offer__item">
@@ -148,12 +153,12 @@
                 loading="lazy" />
             <h3 class="mb-[12px] font-title text-[28px] font-medium leading-8 tracking-[-1.4px]">Realizacje</h3>
             <p class="mb-[63px] text-[14px] tracking-[-0.14px]">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
-            <button class="offer__btn">
+            <a href="#projects" class="offer__btn">
               Zobacz nasze realizacje
               <svg class="fill-accent" width="16" height="16">
                 <use href="./images/sprite.svg#icon-ar-right-button"></use>
               </svg>
-            </button>
+            </a>
           </li>
         </ul>
       </section>
@@ -178,19 +183,20 @@
               charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego
               trybu życia.</p>
             
-            <button class="h-[50px] border border-secondary rounded-full px-[22px] pt-[12px] pb-[14px] text-secondary
-                        flex items-center gap-2 hover:bg-background hover:text-primary hover:border-background transition-all">
+            <a href="#projects"
+              class="max-w-max h-[50px] border border-secondary rounded-full px-[22px] pt-[12px] pb-[14px] text-secondary
+                flex items-center gap-2 hover:bg-background hover:text-primary hover:border-background transition-all">
               Poznaj nas bliżej
               <svg class="fill-secondary hover:fill-primary transition" width="16" height="16">
                 <use href="./images/sprite.svg#icon-ar-right-button"></use>
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </section>
 
       <!-- Projects -->
-      <section class="bg-background">
+      <section id="projects" class="bg-background">
         <div class="container mx-auto py-[24px] px-[16px] xl:px-[89px] pt-[120px]">
           <h2 class="section-title">Realizacje</h2>
           
@@ -202,8 +208,8 @@
         </div>
       </section>
 
-      <!-- Contact -->
-      <section class="container mx-auto py-[60px] flex">
+      <!-- Contacts -->
+      <section id="contacts" class="container mx-auto py-[60px] flex">
         <div class="mx-auto bg-accent flex justify-between items-center gap-16 w-[1040px] py-[120px] px-[110px]">
           <div>
             <h2 class="hidden">Kontakt</h2>
@@ -215,16 +221,105 @@
           
           <div class="w-[157px]">
             <p class="mb-[24px] text-secondary">Śledź nasze najnowsze realizacje!</p>
-            <button class="h-[46px] px-[24px] pt-[10px] pb-[12px] rounded-full bg-secondary text-accent 
-              hover:bg-transparent hover:border hover:border-secondary hover:text-secondary transition-all">
+            <a href="https://www.instagram.com/adrespect/" 
+              target="_blank" 
+              rel="noopener noreferre"
+              aria-label="link Instagram"
+              class="h-[46px] px-[24px] pt-[10px] pb-[12px] rounded-full bg-secondary text-accent 
+                hover:bg-transparent hover:border hover:border-secondary hover:text-secondary transition-all">
               Instagram
-            </button>
+            </a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer></footer>
+    <footer class="bg-primary">
+      <div class="container mx-auto px-[16px] xl:px-[89px] py-[80px]">
+        <div class="flex justify-between items-baseline h-[112px] mb-[62px] border-b border-secondary">
+          <a href="./index.html">
+            <svg class="fill-secondary" width="114" height="19">
+              <use href="./images/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+          
+          <div class="flex items-center gap-6">
+            <p class="text-secondary">Daj znać, co możemy dla Ciebie zrobić!</p>
+            <a href="https://adrespect.pl/"  
+              target="_blank" 
+              rel="noopener noreferre"
+              aria-label="link adRespect company"
+              class="h-[50px] px-[24px] pt-[12px] pb-[14px] text-secondary rounded-full bg-accent
+                hover:opacity-75 transition-all">
+              Skontaktuj się z nami
+            </a>
+          </div>
+        </div>
+
+        <div class="flex justify-between mb-[120px]">
+          <div>
+            <ul class="flex gap-12">
+              <li>
+                <a href="https://adrespect.pl/"  
+                  target="_blank" 
+                  rel="noopener noreferre"
+                  aria-label="link adRespect company"
+                  class="footer__link">
+                  Kontakt
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/adrespect/" 
+                  target="_blank" 
+                  rel="noopener noreferre"
+                  aria-label="link Instagram"
+                  class="footer__link">
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/adrespectagency" 
+                  target="_blank" 
+                  rel="noopener noreferre"
+                  aria-label="link Facebook"
+                  class="footer__link">Facebook
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/adrespect/" 
+                  target="_blank" 
+                  rel="noopener noreferre"
+                  aria-label="link LinkedIn"
+                  class="footer__link">
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="flex gap-12">
+            <a href="tel:000-000-000" class="footer__link">000-000-000</a>
+            <a href="mailto:giarddesign@kontakt.pl" class="footer__link">giarddesign@kontakt.pl</a>
+          </div>
+        </div>
+
+        <div class="flex justify-between">
+          <p class="text-secondary">Prawa zastrzeżone &#169; 2022</p>
+
+          <div class="flex gap-4">
+            <p class="text-secondary">made by</p>
+            <a href="https://adrespect.pl"
+              target="_blank" 
+              rel="noopener noreferre"
+              aria-label="link adRespect company">
+              <svg width="113" height="23">
+                <use href="./images/sprite.svg#icon-logo-company"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script type="module" src="/main.js"></script>
   </body>
