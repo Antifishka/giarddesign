@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -94,10 +94,10 @@
       <!-- Offer -->
       <section class="container mx-auto py-[24px] px-[16px] xl:px-[89px] pt-[120px] pb-[160px]">
         <div class="w-[709px] ml-[111px] mb-[96px]">
-          <p class="mb-[16px] text-xs leading-normal tracking-[-0.12px] text-accent">Oferta</p>
-          <h2 class="mb-[32px] font-title text-5xl font-medium leading-tight tracking-[-1.44px]">Działamy 
+          <h2 class="section-title">Oferta</h2>
+          <p class="section-subtitle">Działamy 
             <span class="italic">kompleksowo</span>
-          </h2>
+          </p>
           <p>Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz
             rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i
             wieloletnim doświadczeniem.
@@ -156,6 +156,71 @@
             </button>
           </li>
         </ul>
+      </section>
+
+      <!-- About -->
+      <section class="h-[720px] flex justify-center">
+        <div class="basis-1/2 bg-[url('/images/about/bg-about.jpeg')] bg-center bg-cover bg-no-repeat">
+        </div>
+
+        <div class="basis-1/2 bg-accent pt-[135px] pl-[160px]">
+          <div class="w-[500px]">
+            <h2 class="section-title text-secondary">O firmie</h2>
+            
+            <p class="section-subtitle mb-[40px] text-secondary">
+              Tworzymy <br> z
+              <span class="italic">pasją</span>
+            </p>
+            
+            <p class="mb-[72px] text-secondary">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani
+              projektanci oraz architekci, których zadaniem
+              jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które
+              charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego
+              trybu życia.</p>
+            
+            <button class="h-[50px] border border-secondary rounded-full px-[22px] pt-[12px] pb-[14px] text-secondary
+                        flex items-center gap-2 hover:bg-background hover:text-primary hover:border-background transition-all">
+              Poznaj nas bliżej
+              <svg class="fill-secondary hover:fill-primary transition" width="16" height="16">
+                <use href="./images/sprite.svg#icon-ar-right-button"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="bg-background">
+        <div class="container mx-auto py-[24px] px-[16px] xl:px-[89px] pt-[120px]">
+          <h2 class="section-title">Realizacje</h2>
+          
+          <p class="section-subtitle mb-[96px]">Nasze
+            <span class="italic">projekty</span>
+          </p>
+          
+          <ul></ul>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="container mx-auto py-[60px] flex">
+        <div class="mx-auto bg-accent flex justify-between items-center gap-16 w-[1040px] py-[120px] px-[110px]">
+          <div>
+            <h2 class="hidden">Kontakt</h2>
+            <p class="font-title text-[40px] leading-tight tracking-[-2px] text-secondary">
+              Zostańmy w kontakcie!<br>Znajdziesz nas na
+              <span class="font-body font-medium tracking-[1px] italic">Instagramie.</span>
+            </p>
+          </div>
+          
+          <div class="w-[157px]">
+            <p class="mb-[24px] text-secondary">Śledź nasze najnowsze realizacje!</p>
+            <button class="h-[46px] px-[24px] pt-[10px] pb-[12px] rounded-full bg-secondary text-accent 
+              hover:bg-transparent hover:border hover:border-secondary hover:text-secondary transition-all">
+              Instagram
+            </button>
+          </div>
+        </div>
       </section>
     </main>
 

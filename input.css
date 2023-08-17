@@ -19,6 +19,14 @@
         @apply hover:text-accent focus:text-accent hover:underline focus:underline focus:outline-none underline-offset-2 decoration-2 decoration-accent transition-all;
     }
 
+    .section-title{
+        @apply mb-[16px] text-xs leading-normal tracking-[-0.12px] text-accent;
+    }
+    
+    .section-subtitle{
+        @apply mb-[32px] font-title text-5xl font-medium leading-tight tracking-[-1.44px]
+    }
+
     .offer__item{
         @apply py-[48px] px-[40px] rounded-[28px] bg-white hover:shadow-lg shadow-accent transition-shadow;
     }

@@ -20,10 +20,10 @@ export default {
     },
     padding: {
       lg: "89px",
-      hero: " calc(100vw / 2 - 64px - 599px)"
     },
     fontFamily: {
-      'title': ['"Montserrat",sans-serif'],
+      'title': ['"Montserrat", sans-serif'],
+      'body': ['"Inter", system-ui, sans-serif'],
     },
     extend: {
     },
