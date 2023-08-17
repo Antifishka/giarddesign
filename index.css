@@ -11,12 +11,13 @@
         line-height: 1.5;
         letter-spacing: -0.16px;
 
+        color: #111111;
         background-color: #F5F0EC;
     }
 }
 
 @layer components {
-    .nav-animation {
+    .nav-animation{
         @apply hover:text-accent focus:text-accent hover:underline focus:underline focus:outline-none underline-offset-2 decoration-2 decoration-accent transition-all;
     }
 
