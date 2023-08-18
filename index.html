@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./dist/output.css" rel="stylesheet">
+
+    <link href="./public/output.css" rel="stylesheet">
     <title>GiardDesign</title>
   </head>
   <body>
@@ -20,7 +21,7 @@
           <nav>
             <ul class="flex items-baseline gap-12">
               <li>
-                <a href="#offer" class="text-sm text-primary nav-animation flex items-center gap-[5px]">
+                <a href="#offer" class="navigation__link flex items-center gap-[5px]">
                   Oferta
                   <svg class="fill-primary hover:fill-accent transition-all" width="12" height="12">
                     <use href="./images/sprite.svg#icon-ar-header"></use>
@@ -29,26 +30,26 @@
               </li>
 
               <li>
-                <a href="#about" class="text-sm text-primary nav-animation">
+                <a href="#about" class="navigation__link">
                   O firmie
                 </a>
               </li>
 
               <li>
-                <a href="#projects" class="text-sm text-primary nav-animation">
+                <a href="#projects" class="navigation__link">
                   Realizacje
                 </a>
               </li>
 
               <li>
-                <a href="#contacts" class="text-sm text-primary nav-animation">
+                <a href="#contacts" class="navigation__link">
                   Kontakt
                 </a>
               </li>
             </ul>
           </nav>
 
-          <button class="h-11 px-[10px] hover:bg-secondary rounded-full flex justify-center items-center ">
+          <button class="h-11 px-[10px] hover:bg-secondary focus:bg-secondary focus:outline-none rounded-full flex justify-center items-center ">
             <svg class="fill-primary hover:fill-accent transition-all" width="24" height="24">
               <use href="./images/sprite.svg#icon-search"></use>
             </svg>

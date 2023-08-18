@@ -17,8 +17,8 @@
 }
 
 @layer components {
-    .nav-animation{
-        @apply hover:text-accent focus:text-accent hover:underline focus:underline focus:outline-none underline-offset-2 decoration-2 decoration-accent transition-all;
+    .navigation__link{
+        @apply text-sm text-primary hover:text-accent focus:text-accent hover:underline focus:underline focus:outline-none underline-offset-2 decoration-2 decoration-accent transition-all;
     }
 
     .section-title{
@@ -38,6 +38,6 @@
     }
 
     .footer__link{
-        @apply text-sm tracking-[-0.14px] text-secondary;
+        @apply text-sm tracking-[-0.14px] text-secondary hover:text-accent focus:outline-none focus:text-accent transition;
     }
 }
