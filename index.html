@@ -9,20 +9,20 @@
   </head>
   <body>
     <header class="bg-white">
-      <div class="container mx-auto py-[24px] px-[16px] xl:px-[89px] flex">
+      <div class="container mx-auto py-[14px] px-[16px] xl:px-[89px] flex items-center">
         <a href="./index.html">
           <svg class="fill-primary" width="114" height="19">
             <use href="./images/sprite.svg#icon-logo"></use>
           </svg>
         </a>
 
-        <div class="ml-auto flex gap-12">
+        <div class="ml-auto flex items-center gap-12">
           <nav>
             <ul class="flex items-baseline gap-12">
               <li>
-                <a href="#offer" class="text-sm text-primary nav-animation flex items-center gap-1">
+                <a href="#offer" class="text-sm text-primary nav-animation flex items-center gap-[5px]">
                   Oferta
-                  <svg class="fill-primary" width="12" height="12">
+                  <svg class="fill-primary hover:fill-accent transition-all" width="12" height="12">
                     <use href="./images/sprite.svg#icon-ar-header"></use>
                   </svg>
                 </a>
@@ -48,9 +48,11 @@
             </ul>
           </nav>
 
-          <svg class="fill-primary hover:fill-accent transition cursor-pointer" width="24" height="24">
-            <use href="./images/sprite.svg#icon-search"></use>
-          </svg>
+          <button class="h-11 px-[10px] hover:bg-secondary rounded-full flex justify-center items-center ">
+            <svg class="fill-primary hover:fill-accent transition-all" width="24" height="24">
+              <use href="./images/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>  
