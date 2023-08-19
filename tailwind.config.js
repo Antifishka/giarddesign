@@ -26,6 +26,19 @@ export default {
       'body': ['"Inter", system-ui, sans-serif'],
     },
     extend: {
+      keyframes: {
+        fadeLeft: {
+          '0%': { transform: 'translateX(-250px)', opacity: 0},
+          '100%': { transform: 'translateY(0)', opacity: 1 },
+        },
+        swing: {
+          '0%': { transform: 'rotate(6deg)' },
+          '4%': { transform: 'rotate(-6deg)' },
+          '8%': { transform: 'rotate(3deg)' },
+          '12%': { transform: 'rotate(-3deg)' },
+          '16%': { transform: 'rotate(0)' },
+        }
+      }
     },
   },
   plugins: [],
