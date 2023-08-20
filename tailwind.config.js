@@ -13,6 +13,7 @@ export default {
       background: "#DCC1AB",
       white: "#FFFFFF",
       black: "#000000",
+      grad: "#D6B79E00",
       transparent: "transparent",
     },
     width: {
