@@ -8,3 +8,6 @@ const macyInstance = Macy({
     margin: 44,
     trueOrder: true,
 });
+
+// SimpleLightbox
+const lightbox = new SimpleLightbox('.projects__list a');
