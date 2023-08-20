@@ -687,8 +687,8 @@ html {
   position: relative;
 }
 
-.bottom-\[44px\] {
-  bottom: 44px;
+.bottom-\[43px\] {
+  bottom: 43px;
 }
 
 .left-0 {
@@ -986,34 +986,42 @@ html {
   background-image: url('/images/about/bg-about.jpeg');
 }
 
-.bg-\[url\(\'\/images\/hero\/bg-hero\.jpeg\'\)\] {
-  background-image: url('/images/hero/bg-hero.jpeg');
+.bg-\[url\(\'\/images\/hero\/bg-hero\.webp\'\)\] {
+  background-image: url('/images/hero/bg-hero.webp');
 }
 
-.bg-gradient-to-b {
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+.bg-gradient-to-t {
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
-.from-grad {
-  --tw-gradient-from: #D6B79E00 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(214 183 158 / 0) var(--tw-gradient-to-position);
+.bg-\[url\(\'\/images\/about\/bg-about-2\.jpg\'\)\] {
+  background-image: url('/images/about/bg-about-2.jpg');
+}
+
+.bg-\[url\(\'\/images\/about\/bg-about\.jpg\'\)\] {
+  background-image: url('/images/about/bg-about.jpg');
+}
+
+.from-background {
+  --tw-gradient-from: #DCC1AB var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(220 193 171 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.to-background {
-  --tw-gradient-to: #DCC1AB var(--tw-gradient-to-position);
+.to-grad {
+  --tw-gradient-to: #D6B79E00 var(--tw-gradient-to-position);
 }
 
 .bg-cover {
   background-size: cover;
 }
 
-.bg-bottom {
-  background-position: bottom;
-}
-
 .bg-center {
   background-position: center;
+}
+
+.bg-top {
+  background-position: top;
 }
 
 .bg-no-repeat {
