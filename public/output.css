@@ -897,9 +897,9 @@ html {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@keyframes fadeLeft {
+@keyframes fadeTop {
   0% {
-    transform: translateX(-250px);
+    transform: translateY(-150px);
     opacity: 0;
   }
 
@@ -909,8 +909,8 @@ html {
   }
 }
 
-.animate-\[fadeLeft_3s\] {
-  animation: fadeLeft 3s;
+.animate-\[fadeTop_3s\] {
+  animation: fadeTop 3s;
 }
 
 @keyframes swing {
@@ -1067,12 +1067,12 @@ html {
   background-image: url('/images/hero/bg-hero-02.webp');
 }
 
-.bg-gradient-to-t {
-  background-image: linear-gradient(to top, var(--tw-gradient-stops));
-}
-
 .bg-\[url\(\'\/images\/hero\/bg-hero-03\.webp\'\)\] {
   background-image: url('/images/hero/bg-hero-03.webp');
+}
+
+.bg-gradient-to-t {
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
 .from-background {
@@ -1307,6 +1307,22 @@ html {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+@font-face {
+  font-family: Montserrat;
+
+  src: url('/src/fonts/Montserrat-Regular.ttf');
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+
+  src: url('/src/fonts/Inter-Regular.ttf');
+
+  font-display: swap;
+}
+
 .first-line\:fill-black::first-line {
   fill: #000000;
 }
@@ -1387,12 +1403,12 @@ html {
 
   @keyframes fadeLeft {
     0% {
-      transform: translateX(-250px);
+      transform: translateX(-150px);
       opacity: 0;
     }
 
     100% {
-      transform: translateY(0);
+      transform: translateX(0);
       opacity: 1;
     }
   }

@@ -30,9 +30,13 @@ export default {
     },
     extend: {
       keyframes: {
-        fadeLeft: {
-          '0%': { transform: 'translateX(-250px)', opacity: 0},
+        fadeTop: {
+          '0%': { transform: 'translateY(-150px)', opacity: 0},
           '100%': { transform: 'translateY(0)', opacity: 1 },
+        },
+        fadeLeft: {
+          '0%': { transform: 'translateX(-150px)', opacity: 0},
+          '100%': { transform: 'translateX(0)', opacity: 1 },
         },
         swing: {
           '0%': { transform: 'rotate(6deg)' },
