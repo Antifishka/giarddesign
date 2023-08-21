@@ -21,6 +21,11 @@ const macyInstance = Macy({
     columns: 3,
     margin: 44,
     trueOrder: true,
+    breakAt: {
+        1024: 3,
+        768: 2,
+        640: 1,
+    },
 });
 
 // SimpleLightbox
