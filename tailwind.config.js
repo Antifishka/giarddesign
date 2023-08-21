@@ -3,7 +3,9 @@ export default {
   content: ["./**/*.{html,js}", "!./**/node_modules/**"],
   theme: {
     screens: {
-      'sm': {'max': '480px'},
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
       'xl': '1440px',
     },
     colors: {

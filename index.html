@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.css"
       integrity="sha512-bhYgu+LnK6ZXsq18JjhqqzZjnw4GzgCe6s34JBw09tQZ9oFC5tdSlLJW/7ZCf9EXuepe6tnQW57X8z3DKnsAGg=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/src/js/siema.min.js" />
 
     <link rel="icon" href="/public/favicon.ico" type="image/x-icon" />
     <link href="/public/output.css" rel="stylesheet">
@@ -29,8 +30,8 @@
           </svg>
         </a>
 
-        <div class="ml-auto flex items-center gap-12">
-          <nav>
+        <div class="ml-auto flex items-center gap-10">
+          <nav class="hidden md:block">
             <ul class="flex items-baseline gap-12">
               <li>
                 <a href="#offer" class="navigation__link flex items-center gap-[5px]">
@@ -61,6 +62,13 @@
             </ul>
           </nav>
 
+          <button class="inline-block md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+
           <button class="h-11 px-[10px] hover:bg-secondary focus:bg-secondary focus:outline-none rounded-full flex justify-center items-center ">
             <svg class="fill-primary hover:fill-accent transition-all" width="24" height="24">
               <use href="./images/sprite.svg#icon-search"></use>
@@ -72,25 +80,25 @@
 
     <main>
       <!-- Hero -->
-      <section class="h-[737px] flex justify-center">
-        <div class="basis-1/2 bg-background pt-[144.5px] flex justify-end">
-          <div class="w-[631px] animate-[fadeLeft_3s]">
-            <h1 class="font-title text-6xl font-medium leading-tight mb-[44px]">Nowoczesna aranżacja 
+      <section class="relative lg:flex">
+        <div class="lg:basis-1/2 bg-background lg:pt-[144px] flex justify-center lg:justify-end">
+          <div class="px-[16px] py-[36px] lg:p-[0px] xl:w-[631px] animate-[fadeLeft_3s]">
+            <h1 class="font-title text-4xl xl:text-6xl font-medium leading-tight mb-[44px]">Nowoczesna aranżacja 
               <br> Twojego ogrodu
             </h1>
 
-            <p class="w-[490px] mb-[72px]">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usługz
+            <p class="max-w-[496px] mb-[72px]">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usługz
               indywidualnym podejściem do każdego projektu.</p>
               
-            <div class="flex gap-9">
+            <div class="flex gap-9 flex-col xl:flex-row">
               <a href="#contacts"
-                class="h-[50px] bg-accent rounded-full px-[24px] pt-[12px] pb-[14px] text-secondary
+                class="max-w-max h-[50px] bg-accent rounded-full px-[24px] pt-[12px] pb-[14px] text-secondary
                   hover:opacity-75 transition">
                 Skontaktuj się z nami
               </a>
 
               <a href="#projects"
-                class="h-[50px] border border-accent rounded-full px-[22px] pt-[12px] pb-[14px] text-accent
+                class="max-w-max h-[50px] border border-accent rounded-full px-[22px] pt-[12px] pb-[14px] text-accent
                   flex items-center gap-2 hover:bg-accent hover:text-secondary transition">
                 Zobacz nasze realizacje
                 <svg class="fill-accent hover:fill-secondary transition" width="16" height="16">
@@ -101,24 +109,26 @@
           </div>
         </div>
 
-        <div class="basis-1/2 bg-accent bg-[url('/images/hero/bg-hero.webp')] bg-top bg-cover bg-no-repeat
-          flex justify-end items-end">
-          <button class="w-[96px] h-[96px] pl-[32px] bg-secondary hover:opacity-75 transition-opacity">
-            <svg class="first-line:fill-black hover:opacity-75 transition-opacity" width="48" height="48">
-              <use href="./images/sprite.svg#icon-ar-left-hero"></use>
-            </svg>
-          </button>
-          <button class="w-[96px] h-[96px] pr-[32px] bg-secondary hover:opacity-75 transition-opacity">
-            <svg class="ml-auto fill-black hover:opacity-75 transition-opacity" width="48" height="48">
-              <use href="./images/sprite.svg#icon-ar-right-hero"></use>
-            </svg>
-          </button>
+        <div class="lg:basis-1/2 h-[488px] lg:h-[737px] bg-accent bg-[url('/images/hero/bg-hero.webp')] bg-top bg-cover bg-no-repeat">
         </div>
+
+        <button class="hero__btn--prev absolute left-0 lg:left-full lg:-translate-x-[192px] bottom-1/2 translate-y-1/2 lg:bottom-0 lg:translate-y-0 w-[96px] h-[96px] pl-[32px]
+          bg-secondary hover:opacity-75 transition-opacity">
+          <svg class="first-line:fill-black hover:opacity-75 transition-opacity" width="48" height="48">
+            <use href="./images/sprite.svg#icon-ar-left-hero"></use>
+          </svg>
+        </button>
+        <button class="hero__btn--next absolute right-0 bottom-1/2 translate-y-1/2 lg:bottom-0 lg:translate-y-0  w-[96px] h-[96px] pr-[32px] 
+          bg-secondary hover:opacity-75 transition-opacity">
+          <svg class="ml-auto fill-black hover:opacity-75 transition-opacity" width="48" height="48">
+            <use href="./images/sprite.svg#icon-ar-right-hero"></use>
+          </svg>
+        </button>
       </section>
 
       <!-- Offer -->
-      <section id="offer" class="container mx-auto py-[24px] px-[16px] xl:px-[89px] pt-[120px] pb-[160px]">
-        <div class="w-[709px] ml-[111px] mb-[96px]">
+      <section id="offer" class="container mx-auto px-[16px] xl:px-[89px] pt-[120px] pb-[160px]">
+        <div class="max-w-[709px] lg:ml-[111px] mb-[96px]">
           <h2 class="section-title">Oferta</h2>
           <p class="section-subtitle">Działamy 
             <span class="italic">kompleksowo</span>
@@ -129,8 +139,8 @@
           </p>
         </div>
 
-        <ul class="flex gap-16">
-          <li class="offer__item" data-aos="flip-right" data-aos-duration="1000">
+        <ul class="lg:flex justify-center gap-4 xl:gap-16">
+          <li class="offer__item w-[360px] lg:w-[320px] xl:w-[378px] mx-auto lg:mx-0 mb-16 lg:mb-0" data-aos="flip-right" data-aos-duration="1000">
             <img class="mb-[34px]" 
               src="./images/offer/pencil.png" 
               alt="pencil" 
@@ -147,7 +157,7 @@
             </a>
           </li>
 
-          <li class="offer__item" data-aos="flip-right" data-aos-duration="2000">
+          <li class="offer__item w-[360px] lg:w-[320px] xl:w-[378px] mx-auto lg:mx-0 mb-16 lg:mb-0" data-aos="flip-right" data-aos-duration="2000">
             <img class="mb-[39px]" 
               src="./images/offer/eye.png" 
               alt="eye" 
@@ -164,7 +174,8 @@
             </a>
           </li>
 
-          <li class="offer__item" data-aos="flip-right" data-aos-duration="3000">
+          <li class="offer__item w-[360px] lg:w-[320px] xl:w-[378px] mx-auto lg:mx-0" 
+            data-aos="flip-right" data-aos-duration="3000">
             <img class="mb-[32px]" 
               src="./images/offer/stars.png" 
                 alt="stars" 
@@ -184,11 +195,11 @@
       </section>
 
       <!-- About -->
-      <section id="about" class="h-[720px] flex justify-center">
-        <div class="basis-1/2 bg-[url('/images/about/bg-about.jpg')] bg-center bg-cover bg-no-repeat">
+      <section id="about" class="lg:flex">
+        <div class="lg:basis-1/2 h-[524px] lg:h-[720px] bg-[url('/images/about/bg-about.jpg')] bg-center bg-cover bg-no-repeat">
         </div>
 
-        <div class="basis-1/2 bg-accent pt-[135px] pl-[160px]">
+        <div class="lg:basis-1/2 flex justify-center lg:justify-start p-[32px] lg:pt-[135px] lg:pb-0 xl:pl-[160px]  bg-accent">
           <div class="w-[500px]" data-aos="fade-left" data-aos-duration="3000">
             <h2 class="section-title text-secondary">O firmie</h2>
             
@@ -217,7 +228,7 @@
 
       <!-- Projects -->
       <section id="projects" class="relative bg-background">
-        <div class="container mx-auto py-[24px xl:px-[160px] pt-[120px]">
+        <div class="container mx-auto px-[16px] lg:px-[160px] pt-[120px]">
           <h2 class="section-title">Realizacje</h2>
           
           <p class="section-subtitle mb-[96px]">Nasze
@@ -496,6 +507,7 @@
       integrity="sha512-X1tKd7cMiYWKVDmFHSn+z1Y+BdrNG6Qvrhj3emg0ZOMsAuzug4ET9PmOFBgYyvcjI1hHGxhkQ1IXhOd9obYeFQ=="
       crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
-    <script type="module" src="/src/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/siema@1.5.1/dist/siema.min.js"></script>
+    <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>
