@@ -1055,8 +1055,8 @@ html {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/images\/about\/bg-about\.jpg\'\)\] {
-  background-image: url('/images/about/bg-about.jpg');
+.bg-\[url\(\'\/images\/about\/bg-about\.webp\'\)\] {
+  background-image: url('/images/about/bg-about.webp');
 }
 
 .bg-\[url\(\'\/images\/hero\/bg-hero-01\.webp\'\)\] {
@@ -1073,10 +1073,6 @@ html {
 
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'\/images\/about\/bg-about\.webp\'\)\] {
-  background-image: url('/images/about/bg-about.webp');
 }
 
 .from-background {
@@ -1352,6 +1348,11 @@ html {
   border-width: 1px;
 }
 
+.hover\:border-accent:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(27 91 49 / var(--tw-border-opacity));
+}
+
 .hover\:border-background:hover {
   --tw-border-opacity: 1;
   border-color: rgb(220 193 171 / var(--tw-border-opacity));
@@ -1360,11 +1361,6 @@ html {
 .hover\:border-secondary:hover {
   --tw-border-opacity: 1;
   border-color: rgb(245 240 236 / var(--tw-border-opacity));
-}
-
-.hover\:border-accent:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(27 91 49 / var(--tw-border-opacity));
 }
 
 .hover\:bg-accent:hover {

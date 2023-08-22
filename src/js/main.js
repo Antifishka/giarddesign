@@ -9,6 +9,8 @@ function onLoadMoreBtn() {
 
     macyInstance.runOnImageLoad(() =>
         macyInstance.recalculate(true), true);
+    
+    lightbox.refresh();
 
     refs.loadMoreBtn.disabled = true;
 }
