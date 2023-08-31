@@ -4,4 +4,5 @@ export const refs = {
     next: document.querySelector('.hero__btn--next'),
     gallery: document.querySelector('.projects__list'),
     loadMoreBtn: document.querySelector('.projects__btn'),
+    gradient: document.querySelector('.projects__gradient'),
 };

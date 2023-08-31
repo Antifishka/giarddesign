@@ -2,33 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: Montserrat;
-    src: url('/src/fonts/Montserrat-Regular.ttf');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: Montserrat-medium;
-    font-weight: 500;
-    src: url('/src/fonts/Montserrat-Medium.ttf');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: Montserrat-medium-italic;
-    font-weight: 500;
-    font-style: italic;
-    src: url('/src/fonts/Montserrat-MediumItalic.ttf');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: Inter;
-    src: url('/src/fonts/Inter-Regular.ttf');
-    font-display: swap;
-}
-
 @layer base {
     html {
         scroll-behavior: smooth;

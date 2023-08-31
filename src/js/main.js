@@ -12,7 +12,8 @@ function onLoadMoreBtn() {
     
     lightbox.refresh();
 
-    refs.loadMoreBtn.disabled = true;
+    refs.loadMoreBtn.classList.add('hidden');
+    refs.gradient.classList.add('hidden');
 }
 
 // Siema
