@@ -25,8 +25,8 @@ const mySiema = new Siema({
     onInit: () => { console.log("Siema work!")},
 });
 
-refs.prev.addEventListener('click', () => mySiema.prev())
-refs.next.addEventListener('click', () => mySiema.next());
+refs.prev.addEventListener('click', () => mySiema.prev(), { passive: true });
+refs.next.addEventListener('click', () => mySiema.next(), { passive: true });
 
 // AOS
 AOS.init();
@@ -46,3 +46,11 @@ const macyInstance = Macy({
 
 // SimpleLightbox
 const lightbox = new SimpleLightbox('.projects__list a');
+
+// Mobile menu
+refs.mobMenuBtn.addEventListener('click', toggleMenu);
+
+function toggleMenu() {
+    refs.mobMenuBtn.classList.toggle('is-active');
+    refs.mobMenu.classList.toggle('is-active');
+}

@@ -21,7 +21,7 @@
     <link href="/public/output.css" rel="stylesheet">
   </head>
   <body>
-    <header class="bg-white">
+    <header class="fixed z-50 top-0 w-[100vw] bg-white">
       <div class="container mx-auto py-[14px] px-[16px] xl:px-[89px] flex items-center">
         <a href="./index.html">
           <svg class="fill-primary" width="114" height="19">
@@ -61,25 +61,44 @@
             </ul>
           </nav>
 
-          <button class="inline-block md:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-              class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-          </button>
+          <!-- Burger button-->
+          <div class="burger flex flex-col gap-[5px] md:hidden" id="burger">
+            <span class="burger__item"></span>
+            <span class="burger__item"></span>
+            <span class="burger__item"></span>
+          </div>
 
           <button class="h-11 px-[10px] hover:bg-secondary focus:bg-secondary focus:outline-none rounded-full flex justify-center items-center ">
             <svg class="fill-primary hover:fill-accent transition-all" width="24" height="24">
               <use href="./images/sprite.svg#icon-search"></use>
             </svg>
           </button>
+
+          <!-- Mobile menu -->
+          <div id="mobile-menu" class="mobile-menu md:hidden fixed z-10 top-[71px] right-0 w-[100%] sm:w-[254px] h-screen px-4 bg-white 
+            translate-x-full opacity-0 transition-all duration-300 ease-in">
+            <ul class="flex flex-col items-center">
+              <li class="mobile-menu__item border-t-2">
+                <a class="mobile-menu__link" href="#offer">Oferta</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#about">O firmie</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#projects">Realizacje</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#contacts">Kontakt</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>  
 
     <main>
       <!-- Hero -->
-      <section class="relative">
+      <section class="relative pt-[72px] bg-background">
         <ul class="hero__slider">
           <li class="lg:flex">
             <div class="lg:basis-1/2 bg-background lg:pt-[144px] flex justify-center lg:justify-end">
