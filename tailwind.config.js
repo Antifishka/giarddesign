@@ -16,6 +16,7 @@ export default {
       white: "#FFFFFF",
       black: "#000000",
       grad: "#D6B79E00",
+      header: "rgba(255, 255, 255, 0.4)",
       transparent: "transparent",
     },
     width: {

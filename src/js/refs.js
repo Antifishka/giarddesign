@@ -1,4 +1,5 @@
 export const refs = {
+    header: document.querySelector('#header'),
     mobMenuBtn: document.querySelector('#burger'),
     mobMenu: document.querySelector('#mobile-menu'),
     slider: document.querySelector('.hero__slider'),

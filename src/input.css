@@ -17,6 +17,10 @@
 } 
 
 @layer components {
+    header.transparency {
+        @apply bg-header backdrop-blur transition-all duration-300 ease-in
+    } 
+
     .navigation__link{
         @apply text-sm text-primary hover:text-accent focus:text-accent hover:underline focus:underline focus:outline-none underline-offset-2 decoration-2 decoration-accent transition-all;
     }

@@ -54,3 +54,17 @@ function toggleMenu() {
     refs.mobMenuBtn.classList.toggle('is-active');
     refs.mobMenu.classList.toggle('is-active');
 }
+
+// Header scroll
+window.onscroll = () => changeHeaderBackground();
+
+function changeHeaderBackground() {
+    const headerOffsetTrigger = refs.header.offsetTop;
+    const pageOffset = window.pageYOffset;
+
+    if (pageOffset > headerOffsetTrigger) {
+        header.classList.add('transparency');
+    } else {
+        header.classList.remove('transparency');
+    }
+}
