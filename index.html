@@ -61,14 +61,25 @@
             </ul>
           </nav>
 
-          <!-- Burger button-->
+          <!-- Burger button -->
           <div class="burger flex flex-col gap-[5px] md:hidden" id="burger">
             <span class="burger__item"></span>
             <span class="burger__item"></span>
             <span class="burger__item"></span>
           </div>
 
-          <button class="h-11 px-[10px] hover:bg-secondary focus:bg-secondary focus:outline-none rounded-full flex justify-center items-center ">
+          <!-- Search input -->
+          <div id="search" class="hidden flex items-center gap-1">
+            <button id="search__close">
+              <svg class="fill-primary hover:fill-accent transition-all" width="24" height="24">
+                <use href="./images/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <input type="text" id="search__input" placeholder="Wyszukaj..."
+              class="focus:outline-none border-b border-primary">
+          </div>
+
+          <button id="search__open" class="h-11 px-[10px] hover:bg-secondary focus:bg-secondary focus:outline-none rounded-full flex justify-center items-center ">
             <svg class="fill-primary hover:fill-accent transition-all" width="24" height="24">
               <use href="./images/sprite.svg#icon-search"></use>
             </svg>

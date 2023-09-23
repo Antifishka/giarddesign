@@ -1105,6 +1105,10 @@ header.transparency {
   gap: 5px;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }

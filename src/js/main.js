@@ -68,3 +68,10 @@ function changeHeaderBackground() {
         header.classList.remove('transparency');
     }
 }
+
+// Search input
+refs.searchOpen.addEventListener('click', onSearchOpen);
+
+function onSearchOpen() {
+    refs.searchForm.classList.add('is-active');
+}
