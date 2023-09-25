@@ -681,6 +681,15 @@ header.transparency {
   color: rgb(27 91 49 / var(--tw-text-opacity));
 }
 
+/* Serch form */
+
+.search-form.is-active {
+  display: flex;
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 1;
+}
+
 .section-title {
   margin-bottom: 16px;
   font-size: 0.75rem;
@@ -947,6 +956,18 @@ header.transparency {
   height: 100vh;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.h-\[100\%\] {
+  height: 100%;
+}
+
+.min-h-\[72px\] {
+  min-height: 72px;
+}
+
 .w-\[100\%\] {
   width: 100%;
 }
@@ -1065,6 +1086,10 @@ header.transparency {
   justify-content: space-between;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-10 {
   gap: 2.5rem;
 }
@@ -1103,10 +1128,6 @@ header.transparency {
 
 .gap-\[5px\] {
   gap: 5px;
-}
-
-.gap-1 {
-  gap: 0.25rem;
 }
 
 .rounded-full {

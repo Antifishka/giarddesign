@@ -71,7 +71,12 @@ function changeHeaderBackground() {
 
 // Search input
 refs.searchOpen.addEventListener('click', onSearchOpen);
+refs.searchClose.addEventListener('click', onSearchClose);
 
 function onSearchOpen() {
     refs.searchForm.classList.add('is-active');
+}
+
+function onSearchClose() {
+    refs.searchForm.classList.remove('is-active');
 }

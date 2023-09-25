@@ -21,8 +21,8 @@
     <link href="/public/output.css" rel="stylesheet">
   </head>
   <body>
-    <header class="fixed z-50 top-0 w-[100vw] bg-white" id="header">
-      <div class="container mx-auto py-[14px] px-[16px] xl:px-[89px] flex items-center">
+    <header class="fixed z-50 top-0 w-[100vw] min-h-[72px] bg-white" id="header">
+      <div class="container mx-auto min-h-[72px] py-[14px] px-[16px] xl:px-[89px] flex items-center">
         <a href="./index.html">
           <svg class="fill-primary" width="114" height="19">
             <use href="./images/sprite.svg#icon-logo"></use>
@@ -69,7 +69,8 @@
           </div>
 
           <!-- Search input -->
-          <div id="search" class="hidden flex items-center gap-1">
+          <div id="search" class="search-form hidden items-center gap-1 
+            translate-x-full opacity-0 transition-all duration-300 ease-in">
             <button id="search__close">
               <svg class="fill-primary hover:fill-accent transition-all" width="24" height="24">
                 <use href="./images/sprite.svg#icon-close"></use>
@@ -79,7 +80,7 @@
               class="focus:outline-none border-b border-primary">
           </div>
 
-          <button id="search__open" class="h-11 px-[10px] hover:bg-secondary focus:bg-secondary focus:outline-none rounded-full flex justify-center items-center ">
+          <button id="search__open" class="hidden md:flex justify-center items-center h-11 px-[10px] hover:bg-secondary focus:bg-secondary focus:outline-none rounded-full">
             <svg class="fill-primary hover:fill-accent transition-all" width="24" height="24">
               <use href="./images/sprite.svg#icon-search"></use>
             </svg>

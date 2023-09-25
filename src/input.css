@@ -56,6 +56,11 @@
         @apply text-primary hover:text-accent transition
     }
 
+    /* Serch form */
+    .search-form.is-active{
+        @apply flex translate-x-0 opacity-100
+    }
+
     .section-title{
         @apply mb-[16px] text-xs leading-normal tracking-[-0.12px] text-accent
     }
