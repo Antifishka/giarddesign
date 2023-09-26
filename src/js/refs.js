@@ -3,6 +3,7 @@ export const refs = {
     mobMenuBtn: document.querySelector('#burger'),
     mobMenu: document.querySelector('#mobile-menu'),
     searchForm: document.querySelector('#search'),
+    input: document.querySelector('#search__input'),
     searchOpen: document.querySelector('#search__open'),
     searchClose: document.querySelector('#search__close'),
     slider: document.querySelector('.hero__slider'),

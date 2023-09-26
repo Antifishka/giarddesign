@@ -63,15 +63,16 @@ function changeHeaderBackground() {
     const pageOffset = window.pageYOffset;
 
     if (pageOffset > headerOffsetTrigger) {
-        header.classList.add('transparency');
+        refs.header.classList.add('transparency');
     } else {
-        header.classList.remove('transparency');
+        refs.header.classList.remove('transparency');
     }
 }
 
 // Search input
 refs.searchOpen.addEventListener('click', onSearchOpen);
 refs.searchClose.addEventListener('click', onSearchClose);
+refs.input.addEventListener('input', onInputChange);
 
 function onSearchOpen() {
     refs.searchForm.classList.add('is-active');
@@ -79,4 +80,18 @@ function onSearchOpen() {
 
 function onSearchClose() {
     refs.searchForm.classList.remove('is-active');
+}
+
+function onInputChange(e) {
+    const text = e.currentTarget.value;
+    console.log(e.currentTarget.value); 
+
+    const elements = document.querySelectorAll("p, h1, h2, h3, h4, span, a");
+
+    for (let i = 0; i < elements.length; i++) {
+        const element = elements[i];
+        if (element.innerText?.includes(text)) {
+            element.classList.add("highlight");
+        }
+    }
 }

@@ -29,8 +29,8 @@
           </svg>
         </a>
 
-        <div class="ml-auto flex items-center gap-10">
-          <nav class="hidden md:block">
+        <div class="ml-auto flex items-center gap-8">
+          <nav class="hidden lg:block">
             <ul class="flex items-baseline gap-12">
               <li>
                 <a href="#offer" class="navigation__link flex items-center gap-[5px]">
@@ -62,32 +62,34 @@
           </nav>
 
           <!-- Burger button -->
-          <div class="burger flex flex-col gap-[5px] md:hidden" id="burger">
+          <div class="burger flex flex-col gap-[5px] lg:hidden" id="burger">
             <span class="burger__item"></span>
             <span class="burger__item"></span>
             <span class="burger__item"></span>
           </div>
 
-          <!-- Search input -->
-          <div id="search" class="search-form hidden items-center gap-1 
+          <!-- Search form -->
+          <div id="search" class="search-form hidden items-center gap-1
             translate-x-full opacity-0 transition-all duration-300 ease-in">
             <button id="search__close">
               <svg class="fill-primary hover:fill-accent transition-all" width="24" height="24">
                 <use href="./images/sprite.svg#icon-close"></use>
               </svg>
             </button>
+
             <input type="text" id="search__input" placeholder="Wyszukaj..."
-              class="focus:outline-none border-b border-primary">
+              class="border-b bg-transparent border-primary focus:outline-none placeholder:text-sm">
           </div>
 
-          <button id="search__open" class="hidden md:flex justify-center items-center h-11 px-[10px] hover:bg-secondary focus:bg-secondary focus:outline-none rounded-full">
+          <!-- Search btn -->
+          <button id="search__open" class="hidden lg:flex justify-center items-center h-11 px-[10px] hover:bg-secondary focus:bg-secondary focus:outline-none rounded-full">
             <svg class="fill-primary hover:fill-accent transition-all" width="24" height="24">
               <use href="./images/sprite.svg#icon-search"></use>
             </svg>
           </button>
 
           <!-- Mobile menu -->
-          <div id="mobile-menu" class="mobile-menu md:hidden fixed z-10 top-[71px] right-0 w-[100%] sm:w-[254px] h-screen px-4 bg-white 
+          <div id="mobile-menu" class="mobile-menu lg:hidden fixed z-10 top-[71px] right-0 w-[100%] sm:w-[254px] h-screen px-4 bg-white 
             translate-x-full opacity-0 transition-all duration-300 ease-in">
             <ul class="flex flex-col items-center">
               <li class="mobile-menu__item border-t-2">
@@ -262,7 +264,7 @@
           </li>
 
           <li class="offer__item w-[360px] lg:w-[320px] xl:w-[378px] mx-auto lg:mx-0 mb-16 lg:mb-0" data-aos="flip-right" data-aos-duration="2000">
-            <img class="mb-[39px]" 
+            <img class="mb-10" 
               src="./images/offer/eye.png" 
               alt="eye" 
               width="48" 
@@ -280,14 +282,14 @@
 
           <li class="offer__item w-[360px] lg:w-[320px] xl:w-[378px] mx-auto lg:mx-0" 
             data-aos="flip-right" data-aos-duration="3000">
-            <img class="mb-[32px]" 
+            <img class="mb-7" 
               src="./images/offer/stars.png" 
                 alt="stars" 
                 width="44" 
                 height="44" 
                 loading="lazy" />
             <h3 class="mb-[12px] font-title text-[28px] font-medium leading-8 tracking-[-1.4px]">Realizacje</h3>
-            <p class="mb-[63px] text-[14px] tracking-[-0.14px]">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
+            <p class="min-h-[84px] mb-[63px] text-[14px] tracking-[-0.14px]">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
             <a href="#projects" class="offer__btn">
               Zobacz nasze realizacje
               <svg class="fill-accent" width="16" height="16">
