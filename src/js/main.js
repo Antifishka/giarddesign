@@ -72,7 +72,7 @@ function changeHeaderBackground() {
 // Search input
 refs.searchOpen.addEventListener('click', onSearchOpen);
 refs.searchClose.addEventListener('click', onSearchClose);
-refs.input.addEventListener('input', onInputChange);
+refs.input.addEventListener('input', _.debounce(onInputChange, 300));
 
 function onSearchOpen() {
     refs.searchForm.classList.add('is-active');
@@ -83,15 +83,19 @@ function onSearchClose() {
 }
 
 function onInputChange(e) {
-    const text = e.currentTarget.value;
-    console.log(e.currentTarget.value); 
+    if (e.currentTarget) {
+        const text = e.currentTarget.value;
+        console.log(text); 
 
-    const elements = document.querySelectorAll("p, h1, h2, h3, h4, span, a");
+        const elements = document.querySelectorAll("p, h1, h2, h3, h4, span, a");
 
-    for (let i = 0; i < elements.length; i++) {
-        const element = elements[i];
-        if (element.innerText?.includes(text)) {
-            element.classList.add("highlight");
+        for (let i = 0; i < elements.length; i++) {
+            const element = elements[i];
+            if (element.innerText?.toLowerCase().includes(text)) {
+                element.classList.add('highlight');
+            } else {
+                element.classList.remove('highlight');
+            }
         }
     }
 }
