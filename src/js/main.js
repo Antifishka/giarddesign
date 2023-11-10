@@ -1,5 +1,6 @@
 import { refs } from './refs.js';
 import { appendImagesMarkup } from "./appendImagesMarkup.js";
+import debounce from 'lodash.debounce';
 
 // Add images
 refs.loadMoreBtn.addEventListener('click', onLoadMoreBtn);
@@ -72,7 +73,7 @@ function changeHeaderBackground() {
 // Search input
 refs.searchOpen.addEventListener('click', onSearchOpen);
 refs.searchClose.addEventListener('click', onSearchClose);
-refs.input.addEventListener('input', _.debounce(onInputChange, 300));
+refs.input.addEventListener('input', onInputChange);
 
 function onSearchOpen() {
     refs.searchForm.classList.add('is-active');
@@ -93,7 +94,8 @@ function onInputChange(e) {
             const element = elements[i];
             if (element.innerText?.toLowerCase().includes(text)) {
                 element.classList.add('highlight');
-            } else {
+            }
+            if (e.currentTarget.value === '') {
                 element.classList.remove('highlight');
             }
         }

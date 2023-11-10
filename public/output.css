@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -801,8 +801,16 @@ header.transparency {
   pointer-events: none;
 }
 
+.static {
+  position: static;
+}
+
 .fixed {
   position: fixed;
+}
+
+.\!absolute {
+  position: absolute !important;
 }
 
 .absolute {
@@ -1070,6 +1078,10 @@ header.transparency {
 
 .animate-\[swing_6s_ease-in-out_infinite_forwards\] {
   animation: swing 6s ease-in-out infinite forwards;
+}
+
+.resize {
+  resize: both;
 }
 
 .flex-col {
@@ -1423,8 +1435,16 @@ header.transparency {
   color: rgb(245 240 236 / var(--tw-text-opacity));
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 .opacity-0 {
   opacity: 0;
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition {
