@@ -1,4 +1,4 @@
-import { refs } from './refs.js';
+import { refs } from './refs';
 
 const markup = `<li>
             <a href="./images/projects/project-big-10.webp">
@@ -31,5 +31,5 @@ const markup = `<li>
           </li>`;
 
 export const appendImagesMarkup = () => {
-    refs.gallery.insertAdjacentHTML('beforeend', markup);
+  refs.gallery.insertAdjacentHTML('beforeend', markup);
 }          
