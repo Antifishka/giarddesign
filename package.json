@@ -2,8 +2,8 @@
   "name": "giarddesign",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://Antifishka.github.io/giarddesign",
   "type": "module",
-  "main": "main.js",
   "source": "index.html",
   "scripts": {
     "start": "parcel",
