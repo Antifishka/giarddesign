@@ -7795,30 +7795,30 @@ n9._=tG,// Define as an anonymous module so, through path mapping, it can be
 define(function(){return tG})):n7?(// Export for Node.js.
 (n7.exports=tG)._=tG,// Export for CommonJS support.
 n4._=tG):n9._=tG}).call(this)});const u={header:document.querySelector("#header"),mobMenuBtn:document.querySelector("#burger"),mobMenu:document.querySelector("#mobile-menu"),searchForm:document.querySelector("#search"),input:document.querySelector("#search__input"),searchOpen:document.querySelector("#search__open"),searchClose:document.querySelector("#search__close"),slider:document.querySelector(".hero__slider"),prev:document.querySelector(".hero__btn--prev"),next:document.querySelector(".hero__btn--next"),gallery:document.querySelector(".projects__list"),loadMoreBtn:document.querySelector(".projects__btn"),gradient:document.querySelector(".projects__gradient")},i=`<li>
-            <a href="./images/projects/project-big-10.webp">
+            <a href="./src/images/projects/project-big-10.webp">
               <picture>
-                <source srcset="./images/projects/project-10.webp 1x,
-                                  ./images/projects/project-10@2x.webp 2x" type="image/webp" />
+                <source srcset="./src/images/projects/project-10.webp 1x,
+                  ./src/images/projects/project-10@2x.webp 2x" type="image/webp" />
             
-                <source srcset="./images/projects/project-10.jpg 1x,
-                                  ./images/projects/project-10@2x.jpg 2x" type="image/jpg" />
+                <source srcset="./src/images/projects/project-10.jpg 1x,
+                  ./src/images/projects/project-10@2x.jpg 2x" type="image/jpg" />
             
-                <img src="./images/projects/project-10.jpg" alt="project-10" class="object-cover" width="100%" height="601px"
+                <img src="./src/images/projects/project-10.jpg" alt="project-10" class="object-cover" width="100%" height="601px"
                   loading="lazy">
               </picture>
             </a>
           </li>
           
           <li>
-            <a href="./images/projects/project-big-11.webp">
+            <a href="./src/images/projects/project-big-11.webp">
               <picture>
-                <source srcset="./images/projects/project-11.webp 1x,
-                            ./images/projects/project-11@2x.webp 2x" type="image/webp" />
+                <source srcset="./src/images/projects/project-11.webp 1x,
+                  ./src/images/projects/project-11@2x.webp 2x" type="image/webp" />
             
-                <source srcset="./images/projects/project-11.jpg 1x,
-                            ./images/projects/project-11@2x.jpg 2x" type="image/jpg" />
+                <source srcset="./src/images/projects/project-11.jpg 1x,
+                  ./src/images/projects/project-11@2x.jpg 2x" type="image/jpg" />
             
-                <img src="./images/projects/project-11.jpg" alt="project-11" class="object-cover" width="100%" height="338px"
+                <img src="./src/images/projects/project-11.jpg" alt="project-11" class="object-cover" width="100%" height="338px"
                   loading="lazy">
               </picture>
             </a>
@@ -7826,6 +7826,6 @@ n4._=tG):n9._=tG}).call(this)});const u={header:document.querySelector("#header"
 const c=new Siema({selector:u.slider,duration:1e3,easing:"cubic-bezier(.17,.67,.32,1.34)",loop:!0,onInit:()=>{console.log("Siema work!")}});u.prev.addEventListener("click",()=>c.prev(),{passive:!0}),u.next.addEventListener("click",()=>c.next(),{passive:!0}),// AOS
 AOS.init();// Macy
 const f=Macy({container:u.gallery,columns:3,margin:44,trueOrder:!0,breakAt:{1024:3,768:2,640:1}}),l=new SimpleLightbox(".projects__list a");u.mobMenuBtn.addEventListener("click",function(){u.mobMenuBtn.classList.toggle("is-active"),u.mobMenu.classList.toggle("is-active")}),// Header scroll
-window.onscroll=()=>(function(){let n=u.header.offsetTop,t=window.pageYOffset;t>n?u.header.classList.add("transparency"):u.header.classList.remove("transparency")})(),u.searchOpen.addEventListener("click",function(){u.searchForm.classList.add("is-active")}),u.searchClose.addEventListener("click",function(){u.searchForm.classList.remove("is-active")}),u.input.addEventListener("input",(a&&a.__esModule?a.default:a).debounce(function(n){let t=u.input?.value.trim().toLowerCase();console.log(t,"seach text");let r=document.querySelectorAll("p, h1, h2, h3, h4, span, a");for(let n=0;n<r.length;n++){let e=r[n];e.innerText?.toLowerCase().includes(t)&&e.classList.add("highlight"),""===t&&e.classList.remove("highlight")}}//# sourceMappingURL=index.b7346638.js.map
+window.onscroll=()=>(function(){let n=u.header.offsetTop,t=window.pageYOffset;t>n?u.header.classList.add("transparency"):u.header.classList.remove("transparency")})(),u.searchOpen.addEventListener("click",function(){u.searchForm.classList.add("is-active")}),u.searchClose.addEventListener("click",function(){u.searchForm.classList.remove("is-active")}),u.input.addEventListener("input",(a&&a.__esModule?a.default:a).debounce(function(n){let t=u.input?.value.trim().toLowerCase();console.log(t,"seach text");let r=document.querySelectorAll("p, h1, h2, h3, h4, span, a");for(let n=0;n<r.length;n++){let e=r[n];e.innerText?.toLowerCase().includes(t)&&e.classList.add("highlight"),""===t&&e.classList.remove("highlight")}}//# sourceMappingURL=index.4001b00f.js.map
 ,300));
-//# sourceMappingURL=index.b7346638.js.map
+//# sourceMappingURL=index.4001b00f.js.map
