@@ -5,8 +5,8 @@
   "homepage": "https://Antifishka.github.io/giarddesign",
   "source": "index.html",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build",
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
