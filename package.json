@@ -5,7 +5,7 @@
   "homepage": "https://Antifishka.github.io/giarddesign",
   "source": "index.html",
   "scripts": {
-    "dev": "tailwindcss build -i ./src/main.css -o ./dist/main.css --watch",
+    "dev": "tailwindcss build -i ./src/main.css -o ./public/main.css --watch",
     "start": "parcel",
     "build": "parcel build",
     "predeploy": "npm run build",
