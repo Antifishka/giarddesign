@@ -1,6 +1,6 @@
 import { refs } from './refs.js';
 import { appendImagesMarkup } from "./appendImagesMarkup.js";
-import _ from 'lodash';
+import debounce from 'lodash.debounce';
 
 // Add images
 refs.loadMoreBtn.addEventListener('click', onLoadMoreBtn);
@@ -73,7 +73,7 @@ function changeHeaderBackground() {
 // Search input
 refs.searchOpen.addEventListener('click', onSearchOpen);
 refs.searchClose.addEventListener('click', onSearchClose);
-refs.input.addEventListener('input', _.debounce(onInputChange, 300));
+refs.input.addEventListener('input', debounce(onInputChange, 300));
 
 function onSearchOpen() {
     refs.searchForm.classList.add('is-active');
