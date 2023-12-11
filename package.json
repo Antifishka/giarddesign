@@ -2,14 +2,11 @@
   "name": "giarddesign",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://Antifishka.github.io/giarddesign",
   "source": "index.html",
   "scripts": {
     "dev": "tailwindcss build -i ./src/main.css -o ./public/main.css --watch",
     "start": "parcel",
-    "build": "parcel build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "build": "parcel build"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +16,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
-    "gh-pages": "^6.0.0",
     "parcel": "latest",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.5"

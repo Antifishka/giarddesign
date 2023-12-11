@@ -2,21 +2,6 @@ import { refs } from './refs.js';
 import { appendImagesMarkup } from "./appendImagesMarkup.js";
 import debounce from 'lodash.debounce';
 
-// Add images
-refs.loadMoreBtn.addEventListener('click', onLoadMoreBtn);
-
-function onLoadMoreBtn() {
-    appendImagesMarkup();
-
-    macyInstance.runOnImageLoad(() =>
-        macyInstance.recalculate(true), true);
-    
-    lightbox.refresh();
-
-    refs.loadMoreBtn.classList.add('hidden');
-    refs.gradient.classList.add('hidden');
-}
-
 // Siema
 const mySiema = new Siema({
     selector: refs.slider,
@@ -44,6 +29,22 @@ const macyInstance = Macy({
         640: 1,
     },
 });
+
+// Add images
+refs.loadMoreBtn.addEventListener('click', onLoadMoreBtn);
+
+function onLoadMoreBtn() {
+    appendImagesMarkup();
+    
+    macyInstance.runOnImageLoad(function () {
+        macyInstance.recalculate(true);
+    }, true);
+    
+    lightbox.refresh();
+
+    refs.loadMoreBtn.classList.add('hidden');
+    refs.gradient.classList.add('hidden');
+}
 
 // SimpleLightbox
 const lightbox = new SimpleLightbox('.projects__list a');
