@@ -85,4 +85,13 @@
     .footer__link{
         @apply text-sm tracking-[-0.14px] text-secondary hover:text-accent focus:outline-none focus:text-accent transition;
     }
+
+    /* Dropdown menu */
+    .dropdown-menu.is-active{
+        @apply lg:scale-y-100
+    }
+
+    .dropdown-menu__link{
+        @apply block py-[4px] px-[14px] text-sm text-primary hover:text-accent hover:bg-secondary transition
+    }
 }

@@ -100,3 +100,11 @@ function onInputChange(e) {
         }
     }
 }
+
+// Dropdown menu
+refs.dropdown.addEventListener('click', toggleDropdownMenu);
+
+function toggleDropdownMenu() {
+    refs.dropdownMenu.classList.toggle('is-active');
+}
+

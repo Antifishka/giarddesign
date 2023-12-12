@@ -20,25 +20,41 @@
     <link rel="icon" href="/public/favicon.ico" type="image/x-icon" />
     <link href="/public/main.css" rel="stylesheet">
   </head>
-  <body>
+  <body id="body">
     <header class="fixed z-50 top-0 w-[100vw] min-h-[72px] bg-white" id="header">
       <div class="container mx-auto min-h-[72px] py-[14px] px-[16px] xl:px-[89px] flex items-center">
-        <a href="./index.html">
+        <a href="./index.html" class="outline-none">
           <svg class="fill-primary" width="114" height="19">
             <use href="./src/images/sprite.svg#icon-logo"></use>
           </svg>
         </a>
 
         <div class="ml-auto flex items-center gap-8">
-          <nav class="hidden lg:block">
+          <nav class="hidden lg:block relative">
+
+            <!-- Dropdown menu -->
+            <ul id="dropdown-menu"
+              class="dropdown-menu overflow-hidden absolute top-8 left-0 py-[6px] rounded-xl bg-white
+                scale-y-0 transition-all duration-300 ease-in origin-top">
+              <li>
+                <a href="#option-1" class="dropdown-menu__link">Projekty</a>
+              </li>
+              <li>
+                <a href="#option-2" class="dropdown-menu__link">Wizualizacje</a>
+              </li>
+              <li>
+                <a href="#option-3" class="dropdown-menu__link">Realizacje</a>
+              </li>
+            </ul>
+
             <ul class="flex items-baseline gap-12">
               <li>
-                <a href="#offer" class="navigation__link flex items-center gap-[5px]">
+                <button class="navigation__link flex items-center gap-[5px]" id="dropdown-toggle">
                   Oferta
                   <svg class="fill-primary hover:fill-accent transition-all" width="12" height="12">
                     <use href="./src/images/sprite.svg#icon-ar-header"></use>
                   </svg>
-                </a>
+                </button>
               </li>
 
               <li>
@@ -82,7 +98,8 @@
           </div>
 
           <!-- Search btn -->
-          <button id="search__open" class="hidden lg:flex justify-center items-center h-11 px-[10px] hover:bg-secondary focus:bg-secondary focus:outline-none rounded-full">
+          <button id="search__open" type="button"
+            class="hidden lg:flex justify-center items-center h-11 px-[10px] hover:bg-secondary focus:bg-secondary focus:outline-none rounded-full">
             <svg class="fill-primary hover:fill-accent transition-all" width="24" height="24">
               <use href="./src/images/sprite.svg#icon-search"></use>
             </svg>
@@ -246,7 +263,8 @@
         </div>
 
         <ul class="lg:flex justify-center gap-4 xl:gap-16">
-          <li class="offer__item w-[360px] lg:w-[320px] xl:w-[378px] mx-auto lg:mx-0 mb-16 lg:mb-0" data-aos="flip-right" data-aos-duration="1000">
+          <li id="option-1"
+            class="offer__item w-[360px] lg:w-[320px] xl:w-[378px] mx-auto lg:mx-0 mb-16 lg:mb-0" data-aos="flip-right" data-aos-duration="1000">
             <img class="mb-[34px]" 
               src="./src/images/offer/pencil.png" 
               alt="pencil" 
@@ -263,7 +281,8 @@
             </a>
           </li>
 
-          <li class="offer__item w-[360px] lg:w-[320px] xl:w-[378px] mx-auto lg:mx-0 mb-16 lg:mb-0" data-aos="flip-right" data-aos-duration="2000">
+          <li id="option-2"
+            class="offer__item w-[360px] lg:w-[320px] xl:w-[378px] mx-auto lg:mx-0 mb-16 lg:mb-0" data-aos="flip-right" data-aos-duration="2000">
             <img class="mb-10" 
               src="./src/images/offer/eye.png" 
               alt="eye" 
@@ -280,7 +299,8 @@
             </a>
           </li>
 
-          <li class="offer__item w-[360px] lg:w-[320px] xl:w-[378px] mx-auto lg:mx-0" 
+          <li id="option-3"
+            class="offer__item w-[360px] lg:w-[320px] xl:w-[378px] mx-auto lg:mx-0" 
             data-aos="flip-right" data-aos-duration="3000">
             <img class="mb-7" 
               src="./src/images/offer/stars.png" 
